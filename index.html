@@ -31,21 +31,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Tangkap form submit event
-            $('#pendaftaranForm').on('submit', function(e) {
-                e.preventDefault(); // Mencegah reload halaman
-
-                // Ambil nilai dari input form
-                var nama = $('#nama').val();
-                var nim = $('#nim').val();
-                var kelas = $('#kelas').val();
-
-                // Tambahkan baris baru ke tabel
-                $('#mahasiswaTable tbody').append(
-                    '<tr><td>' + nama + '</td><td>' + nim + '</td><td>' + kelas + '</td></tr>'
-                );
-
-                // Reset form setelah data ditambahkan
+       
                 this.reset();
             });
         });
